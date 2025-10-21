@@ -28,7 +28,8 @@
     "prepack": "pnpm run build",
     "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
     "test": "pnpm lint && pnpm test:types && vitest run --coverage",
-    "test:types": "tsc --noEmit"
+    "test:types": "tsc --noEmit",
+    "start:realtime": "node ./server/server.js"
   },
   "devDependencies": {
     "@types/async": "^3.2.25",
